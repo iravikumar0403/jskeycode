@@ -1,3 +1,6 @@
+checkDevice()
+
+
 var keyCode = document.getElementById('main')
 
 var key = document.getElementById('key')
@@ -39,3 +42,15 @@ function addLocation(loc){
     }
     keyLocation.appendChild(locationInfo)
 }
+
+
+function checkDevice() {
+    var media = window.matchMedia("(max-width: 992px)")
+    var keyCode = document.getElementById('main')
+    if (media.matches) {
+        console.log(keyCode)
+      keyCode.innerHTML = "<p id='msg'>This website cannot be used on mobile devices. Please visit this site on a Laptop/PC</p>"
+    } else {
+      keyCode.innerHTML = "<p id='msg'>Press any key to get JavaScript event keycode</p>"
+    }
+  }

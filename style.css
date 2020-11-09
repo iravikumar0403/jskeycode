@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 body{
     margin: 0;
     padding: 0;
     background-color: #000000;
     color: #fff4f4;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 #main{
     height: 100vh;
@@ -13,9 +15,16 @@ body{
     justify-content: center;
     font-size: 220px;
     position: relative;
-    padding: 100px;
+    padding: 10px;
     box-sizing: border-box;
     transform: translateY(-10%);
+}
+
+#msg{
+    font-size: 48px;
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #cards-container{
@@ -30,7 +39,7 @@ body{
 
 .info-card{
     text-align: center;
-    width: 250px;
+    width: 220px;
     background-color: #292929;
     border-radius: 10px;
 }
@@ -51,4 +60,11 @@ body{
 #location-desc{
     font: 200;
     font-size: 18px;
+}
+
+
+@media (max-width: 992px) {
+    #msg{
+       font-size: 18px; 
+    }
 }
